@@ -1,0 +1,198 @@
+/* ===== GENERAL STYLES ===== */
+
+@font-face {
+    font-family: "Norse";
+    src: url("Norsebold.otf") format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+}
+
+/* ===== MAIN LAYOUT ===== */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== LEFT SIDEBAR ===== */
+
+.sidebar {
+    width: 37%;
+    min-height: 100vh;
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Odin Logo Section */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+
+    margin-top: 220px;
+}
+
+.logo-container img {
+    height: 120px;
+    width: auto;
+}
+
+.logo-container h1 {
+    font-family: "Norse", sans-serif;
+    color: white;
+    font-size: 70px;
+    margin: 0;
+}
+
+/* Photo Credit */
+
+.photo-credit {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.photo-credit a {
+    color: white;
+}
+
+/* ===== RIGHT CONTENT ===== */
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Introduction */
+
+.intro {
+    padding: 40px 45px;
+    max-width: 850px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.intro p {
+    margin-bottom: 25px;
+}
+
+/* ===== FORM SECTION ===== */
+
+.form-section {
+    background-color: white;
+    padding: 20px 45px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 25px;
+}
+
+/* Input Layout */
+
+.form-fields {
+    display: grid;
+    grid-template-columns: 260px 260px;
+    column-gap: 70px;
+    row-gap: 22px;
+}
+
+/* Individual Fields */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1f2937;
+    margin-bottom: 3px;
+}
+
+.form-group input {
+    height: 32px;
+    padding: 5px 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Focused Input */
+
+.form-group input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Invalid Password */
+
+.form-group input[type="password"]:user-invalid {
+    border: 1px solid red;
+}
+
+/* ===== FORM FOOTER ===== */
+
+.form-footer {
+    padding: 35px 45px;
+}
+
+.create-button {
+    background-color: #596D48;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 55px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.create-button:hover {
+    background-color: #485a3a;
+}
+
+/* Login Text */
+
+.login-text {
+    margin-top: 35px;
+    font-size: 16px;
+}
+
+.login-text a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
